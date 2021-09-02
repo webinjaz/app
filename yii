@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use App\Runner\ConsoleApplicationRunner;
+
+define('YII_ENV', getenv('env') ?? 'production');
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$consoleRunner = new ConsoleApplicationRunner();
+
+// Run application:
+$consoleRunner->run();
